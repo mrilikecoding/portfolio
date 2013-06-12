@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+}
+#main{
+	padding: 25px;
+} 
+
+#header .button-field .btn {
+	margin-top: -7px;
+}
+
+#legend {
+}
+#legend li {
+	display: inline;
+}
+.node:not(:hover) .nodetext {
+  display: none;
+}
+
+.nodetext{
+	position: abosolute;
+	top: 5px;
+	left: 5px;
+}
+
+</style>
+<script type="text/javascript" src="http://d3js.org/d3.v2.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div id = "main">
+	<div id = "header">
+		<a href = "#"><img src = "logo.png"></a>
+		<hr>
+		<div class = "button-field alert alert-info">
+		<span class="lead">View top insights:		</span>
+		<span class = "bubble btn"><i class = " icon-certificate"></i> Bubble</span>
+		<span class = "list btn"><i class = "icon-list"></i> List</span>
+	</div>
+		<h4>
+	</div>
+	<div id = "content">
+		<div class = 'hero-unit'>
+			<h2 id = "caption"></h2>
+			<ul id="legend">
+				<li style = "color: #1f77b4;"> Super Interesting /</li>
+				<li style = "color: #ff7f0e;">/ Very Interesting /</li>
+				<li style = "color: #2ca02c;">/ Interesting /</li>
+				<li style = "color: #d62728;">/ Somewhat Interesting /</li>
+				<li style = "color: #9467bd;">/ Not Interesting</li>
+			</ul>
+			<div id='chart' >
+		</div>
+		</div>
+	</div>
+</div>
+<script>
+
+//sample data
+var data3 = [
+	{ name : 'Men with beards spend more money on beer', value: 35 },
+	{ name : 'Someone does something else', value: 73 },	
+	{ name : 'Someone does something else', value: 124 },	
+];
+
+
+$(document).ready(function(){ 
+//ui
+$content = $("#content");
+$content.hide();
+
+$(".bubble").click(function(){
+	$("#caption").hide();
+	$("#legend").show();
+	$content.hide()
+		.delay(300)
+		.slideDown();
+	bubble();
+	
+});
+
+$(".list").click(function(){
+	$("#caption").show().text("Insights Leaderboard");
+	$("#legend").hide();
+	$content.hide()
+		.delay(300)
+		.slideDown();
+	list();
+});	
+
+
+var removeChart = function() {
+	var $list = $("#chart ol");
+	var $bub = $("#chart svg");
+    if ($list.length > 0 || $bub.length > 0){ 
+		$list.remove(); 
+		$bub.remove(); 
+	}
+};
+
+	var list = function(){
+		removeChart();
+		d3.csv("data.csv", function(data){
+		var vis = d3.select("#chart").append("ol");
+		var selection = vis.selectAll("li")
+							.data(data)
+							.enter()
+							.append("li")
+					        .transition()
+					          .delay(function(d, i) { return i * 30 })
+					          .duration(700)  
+							.text(function(data){ return data.name})
+						});
+					}
+	
+	var bubble = function(){
+		removeChart();
+		d3.csv("data2.csv", function(data){
+			var min = d3.min(data, function(d){return d.value;});
+			var max = d3.max(data, function(d){return d.value;});
+			var w = 960,
+			    h = 500,
+				color = d3.scale.category10();
+				scale = d3.scale.linear()
+						.domain([min, max])
+						.range([0, w]);
+			
+			scale(data.value);
+			console.log(data.value);
+			var vis = d3.select("#chart").append("svg")
+			    .attr("width" , w)
+			    .attr("height", h)
+			var bubble_layout = d3.layout.pack()
+			    .sort(function() {return 0.5 - Math.random()})
+			    .size([w,h])
+			    .padding(0);
+			var selection = vis.selectAll("g.node")
+			              .data(bubble_layout.nodes({children: data})
+						  .filter(function(d) { return !d.children; }));
+			var node = selection.enter().append("g")
+			              .attr("class", "node")
+			              .attr("transform", function(d) { return "translate(" + d.x + ", " + d.y + ")"; })
+						  	.filter(function(d){
+			      				return d.value > 0;
+								});
+			node.append("circle")
+	        .transition()
+	          .delay(function(d, i) { return i * 100 })
+			  .ease("elastic")
+	          .duration(700)  
+			    .attr("r", function(d) { return d.r; })
+			    .style("fill", function(d) { return color(scale(d.value)); });
+		
+			vis.selectAll("circle").append("svg:title")
+				// .attr("class", "nodetext")
+				// 			    .attr("text-anchor", "middle")
+				// 			    .attr("dy", ".3em")
+			    .text(function(d) { return d.name; });
+
+		});
+	};
+
+
+});
+</script>
+
+
+
+</body>
+</html>
