@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'sinatra'
-require 'Haml'
+require 'haml'
 
 configure do
   set :views, "#{File.dirname(__FILE__)}/views"
