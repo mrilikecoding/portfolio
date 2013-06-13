@@ -7,31 +7,35 @@ body {
 }
 #main{
 	padding: 25px;
+	font-family: PT Sans, sans-serif;
 } 
 
 #header .button-field .btn {
 	margin-top: -7px;
 }
-
-g circle:hover{
-	stroke: 0;
-}
-
 #legend {
+	font-family: PT Serif, serif;
 }
 #legend li {
 	display: inline;
 }
-/*.node:not(:hover) .nodetext {
-  display: none;
+
+g circle:hover{
+	stroke: #000000;
+	stroke-width: 2px;
 }
 
-.nodetext{
-	position: abosolute;
-	top: 5px;
-	left: 5px;
+.insightList{
+	font-size: 1.6em;
+	font-family: PT Sans, sans-serif;
 }
-*/
+
+#questions{
+	font-size: 1.6em;
+	font-family: PT Sans, sans-serif;
+}
+
+
 </style>
 <script type="text/javascript" src="http://d3js.org/d3.v2.js"></script>
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
@@ -43,7 +47,7 @@ g circle:hover{
 		<a href = "#"><img src = "logo.png"></a>
 		<hr>
 		<div class = "button-field alert alert-info">
-		<span class="lead">View top insights:		</span>
+		<span class="lead">View top insights: </span>
 		<span class = "bubble btn"><i class = " icon-certificate"></i> Bubble</span>
 		<span class = "list btn"><i class = "icon-list"></i> List</span>
 	</div>
@@ -59,8 +63,18 @@ g circle:hover{
 				<li style = "color: #d62728;">/ Somewhat Interesting /</li>
 				<li style = "color: #9467bd;">/ Not Interesting</li>
 			</ul>
-			<div id='chart' >
+		<div id='chart' >
 		</div>
+		<div class="pagination">
+			  <ul>
+			    <li class="p1 disabled"><a href="#" onClick = "$goToPage(1);">1</a></li>
+			    <li class="p2"><a href="#" onClick = "$goToPage(2);">2</a></li>
+			    <li class="p3"><a href="#" onClick = "$goToPage(3);">3</a></li>
+			    <li class="p4"><a href="#" onClick = "$goToPage(4);">4</a></li>
+			    <li class="p5"><a href="#" onClick = "$goToPage(5);">5</a></li>				
+			  </ul>
+	  	</div>
+
 		<h3 id ="questions"></h3>
 		</div>
 	</div>
@@ -74,25 +88,52 @@ var data3 = [
 	{ name : 'Someone does something else', value: 124 },	
 ];
 
-
-$(document).ready(function(){ 
 //ui
 var $content = $("#content");
 $content.hide();
 
 var $showText = function(){
-	
 	$("circle").hover(function() { 
 		$select = $("g circle title");
 		$title = $(this).text();
 		$("#questions").text($title) }, function(){});
+};
+
+var $makePages = function(){
+	$("ol li").each(function(i){ 
+		if (i < 10) { 
+			$(this).addClass("page1"); 
+		} else if (i < 20 && i >= 10 ){
+			$(this).addClass("page2").hide(); 
+		} else if (i < 30 && i >= 20 ){
+			$(this).addClass("page3").hide(); 
+		} else if (i < 40 && i >= 30 ){
+			$(this).addClass("page4").hide(); 
+		} else if (i < 50 && i >= 40 ){
+			$(this).addClass("page5").hide(); 
+		} else {
+			$(this).addClass("overflow").remove();
+		}
+	});
+};
+
+var $goToPage = function(pageNumber){
+	for (i = 0; i < 6; i++){
+		$(".page" + i).hide();
+		$(".p" + i).removeClass("disabled");
+	}
+	$(".page" + pageNumber).show();
+	//for Bootstrap pagination links (corresponding to page numbers)
+	$(".p" + pageNumber).addClass("disabled");
 }
 
-$titles = $("g circle title");
+var $titles = $("g circle title");
 
 
 $(".bubble").click(function(){
 	$("#caption").hide();
+	$(".pagination").hide();
+	
 	$("#questions").show();
 	$("#legend").show();
 	$content.hide()
@@ -103,6 +144,9 @@ $(".bubble").click(function(){
 
 $(".list").click(function(){
 	$("#caption").show().text("Insights Leaderboard");
+	$(".pagination").show();
+	
+	
 	$("#legend").hide();
 	$("#questions").hide();
 	$content.hide()
@@ -124,7 +168,7 @@ var removeChart = function() {
 	var list = function(){
 		removeChart();
 		d3.csv("data.csv", function(data){
-		var vis = d3.select("#chart").append("ol");
+		var vis = d3.select("#chart").append("ol").attr("class", "insightList");
 		var selection = vis.selectAll("li")
 							.data(data)
 							.enter()
@@ -133,7 +177,10 @@ var removeChart = function() {
 					          .delay(function(d, i) { return i * 30 })
 					          .duration(700)  
 							.text(function(data){ return data.name})
+							$makePages();
 						});
+			
+		
 					}
 	
 	var bubble = function(){
@@ -184,18 +231,8 @@ var removeChart = function() {
 			vis.selectAll("circle").append("svg:title")
 			    .text(function(d) { return d.name; });
 			$showText();
-			// $(function () {
-			// $('circle').hover(function () {
-			// $(this).attr('r',100);
-			// },function(){
-			// $(this).attr('r',59);
-			// });
-			// });
 		});
 	};
-
-
-});
 </script>
 
 
