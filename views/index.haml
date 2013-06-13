@@ -1,0 +1,53 @@
+!!!
+%html
+%head
+%meta{ :charset => "utf-8"}
+  %script{ :type=> "text/javascript", :src=> "js/d3.v3.min.js"}
+  %script{ :type=> "text/javascript", :src=> "http://code.jquery.com/jquery-latest.min.js"}
+  %link{ :href=> "css/bootstrap.min.css", :rel => "stylesheet", :media => "screen"}
+  %link{ :href=> "css/style.css", :rel => "stylesheet", :media => "screen"}
+  %title SocialCrunch Insight Results
+%body
+  #main
+    #header
+      %a{ :href => "#"}
+        %img{ :src => "logo.png"}
+      %hr
+      .button-field.alert.alert-info
+        %span.lead View top insights:
+        %span.bubble.btn
+          %i.icon-certificate
+          Bubble
+        %span.list.btn
+          %i.icon-list
+          List
+      %h4
+    #content
+      .hero-unit
+        %h2#caption
+        %ul#legend
+          %li{ :style => "color: #1f77b4;"}
+            Super Interesting /
+          %li{ :style => "color: #ff7f0e;"}
+            \/ Very Interesting /
+          %li{ :style => "color: #2ca02c;"}
+            \/ Interesting /
+          %li{ :style => "color: #d62728;"}
+            \/ Somewhat Interesting /
+          %li{ :style => "color: #9467bd;"}
+            \/ Not Interesting
+        #chart
+        .pagination
+          %ul
+            %li.p1.disabled
+              %a{:href=> "#", :onClick=> "$goToPage(1);"} 1
+            %li.p2
+              %a{:href=> "#", :onClick=> "$goToPage(2);"} 2
+            %li.p3
+              %a{:href=> "#", :onClick=> "$goToPage(3);"} 3
+            %li.p4
+              %a{:href=> "#", :onClick=> "$goToPage(4);"} 4
+            %li.p5
+              %a{:href=> "#", :onClick=> "$goToPage(5);"} 5
+        %h3#questions
+  %script{:src=>"js/script.js", :type=>"text/javascript"}

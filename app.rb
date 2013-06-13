@@ -1,6 +1,11 @@
 require 'rubygems'
 require 'sinatra'
+require 'Haml'
+
+configure do
+  set :views, "#{File.dirname(__FILE__)}/views"
+end
 
 get '/' do
-  send_file 'public/index.html'
+  haml :index
 end
