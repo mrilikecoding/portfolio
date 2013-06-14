@@ -129,7 +129,7 @@ var bubble = function(){
                 .filter(function(d) { return !d.children; }));
         var node = selection.enter().append("g")
             .attr("class", "node")
-            .attr("transform", function(d) { return "translate(" + 0 + ", " + 0 + ")"; })
+            .attr("transform", function() { return "translate(" + 0 + ", " + 0 + ")"; })
             .filter(function(d){
                 return d.value > 0;
             });

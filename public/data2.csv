@@ -1,40 +1,160 @@
-name,Super Interesting,Interesting,Hard to Believe,Not Interesting,Hard To Read,Total,Score,value
-People who have slept with someone to get back at someone else are more likely to have had sex on a pool table.,1,1,0,0,0,2,3,1.50
-People who leave subtle hints about presents they want to receive are more likely to have had an abortion.,1,1,0,0,0,2,3,1.50
-People who have had a STD are more likely to have had an abortion.,0,5,0,0,0,5,5,1.00
-People who have taken a STD test in the last 12 months are more likely to have a friend with benefits.,0,5,0,0,0,5,5,1.00
-People who groom their pubic area are more likely to always practice safe sex.,0,4,0,0,0,4,4,1.00
-People who have purposely left a restaurant/bar without paying are more likely to have had an abortion.,0,4,0,0,0,4,4,1.00
-People who have slept on the bathroom floor because they drank too much are more likely to have been cheated on.,0,3,0,0,0,3,3,1.00
-People who believe the stereotype that women are bad drivers are more likely to have slept with their former teacher.,0,2,0,0,0,2,2,1.00
-People who can cross their eyes... are more likely to have kids.,0,2,0,0,0,2,2,1.00
-People who do their own laundry are more likely to use an iPhone.,0,2,0,0,0,2,2,1.00
-People who groom their pubic area are more likely to have a friend with benefits.,0,2,0,0,0,2,2,1.00
-People who have dated someone solely for their money are more likely to have lied about being interested in a sport because their partner was interested in it.,0,2,0,0,0,2,2,1.00
-People who have gone to work under the influence of alcohol are more likely to be ambidextrous.,0,2,0,0,0,2,2,1.00
-People who have taken a STD test in the last 12 months are more likely to have kissed someone of the same sex.,0,2,0,0,0,2,2,1.00
-People who prefer texting are more likely to be able to touch their toes....,0,2,0,0,0,2,2,1.00
-People who wipe standing up after a poo are more likely to be male.,0,2,0,0,0,2,2,1.00
-People who can cross their eyes... are more likely to own a gun.,0,1,0,0,0,1,1,1.00
-People who have dated someone solely for their money are more likely to have a friend with benefits.,0,1,0,0,0,1,1,1.00
-People who prefer texting are more likely to believe in a God.,0,1,0,0,0,1,1,1.00
-People who want to have sex in a public place are more likely to be female.,0,1,0,0,0,1,1,1.00
-People who want to hook up with their partner's friend are more likely to have driven drunk.,0,1,0,0,0,1,1,1.00
-People who have been arrested and put in the backseat of a police car are more likely to not own a gun.,1,1,1,0,0,3,2,0.67
-People who believe the stereotype that Americans that live in the South are Rednecks are more likely to have fantasized about a celebrity while they were with their partner.,0,3,1,0,0,4,2,0.50
-People who believe the stereotype that women are bad drivers are more likely to be female.,0,2,1,0,0,3,1,0.33
-People who groom their pubic area are more likely to believe ALL marriages should be treated equally.,0,2,1,0,0,3,1,0.33
-People who do not like giving oral sex are more likely to be able to wiggle their ears....,1,1,0,1,0,3,1,0.33
-People who have fallen asleep during sex are more likely to think abortion is wrong.,1,1,0,1,0,3,1,0.33
-People who have hazel eyes are more likely to have broken up with someone because he/she is not religious enough.,1,1,0,1,0,3,1,0.33
-People who do not believe in a God are more likely to prefer talking on the phone.,0,2,0,1,0,3,0,0.00
-People who groom their pubic area are more likely to want to sleep with one of their friends.,0,2,0,1,0,3,0,0.00
-People who have been fired from a job are more likely to believe in soul mates.,0,2,0,1,0,3,0,0.00
-People who have been to the hospital because of drug use are more likely to own a gun.,0,2,0,1,0,3,0,0.00
-People who think abortion is wrong are more likely to believe in a God.,0,2,0,1,0,3,0,0.00
-People who want to have sex in a public place are more likely to suck their thumb.,0,2,0,1,0,3,0,0.00
-People who want to hook up with their partner's friend are more likely to believe chivalry is still alive.,0,2,0,1,0,3,0,0.00
-People who have brown eyes are more likely to have stolen anything.,1,0,0,1,0,2,0,0.00
-People who have red hair are more likely to be male.,1,0,0,1,0,2,0,0.00
-People who prefer texting are more likely to think abortion is wrong.,1,0,0,1,0,2,0,0.00
-People who remember exactly what they were doing on 9/11 are more likely to not think abortion is wrong.,1,0,0,1,0,2,0,0.00
+name,Super Interesting,Interesting,Interesting but Doubtful,Not Interesting,Hard To Read,Total,Score,value
+Conservatives are more likely to trade sex for drugs.,2,0,0,0,0,2,4,2.00
+People who always pray during a difficult situation are more likely to prefer living in hot weather over cold weather.,1,0,0,0,0,1,2,2.00
+People who drink 11-20 alcoholic beverages in a week are more likely to have kids.,2,0,0,0,0,2,4,2.00
+People who have been arrested and put in the backseat of a cop car are more likely to masturbate at least 8 times a week.,2,0,0,0,0,2,4,2.00
+People who have fallen asleep during sex are more likely to be a conservative.,2,0,0,0,0,2,4,2.00
+People who have had sex in a public place are more likely to intervene if they saw someone being bullied.,2,0,0,0,0,2,4,2.00
+People who have sex daily are more likely to prefer Coke to Pepsi.,2,0,0,0,0,2,4,2.00
+People who have sex daily are more likely to use an Android.,2,0,0,0,0,2,4,2.00
+People who haven't had an orgasm with their current partner are more likely to have kids.,2,0,0,0,0,2,4,2.00
+People who never wash their hands after going to the bathroom are more likely to be kinky.,1,0,0,0,0,1,2,2.00
+People who prefer Lancome makeup over L'Oreal are more likely to believe in soul mates.,2,0,0,0,0,2,4,2.00
+People who've never tried alcohol are more likely to look away if they saw someone being bullied.,2,0,0,0,0,2,4,2.00
+People who are friends with someone they feel sorry for are more likely to be interested in politics.,2,1,0,0,0,3,5,1.67
+Liberals are more likely to call out the wrong name during sex.,1,1,0,0,0,2,3,1.50
+People who always pray during a difficult situation are more likely to fall asleep during sex.,1,1,0,0,0,2,3,1.50
+People who are currently cheating on their partner are more likely to be closer to their mom.,1,1,0,0,0,2,3,1.50
+People who are currently cheating on their partner are more likely to find people with accents more sexy.,1,1,0,0,0,2,3,1.50
+People who are currently cheating on their partner are more likely to think they have above-average looks.,1,1,0,0,0,2,3,1.50
+People who are friends with someone they feel sorry for are more likely to feel judged by their family.,1,1,0,0,0,2,3,1.50
+People who are friends with someone they feel sorry for are more likely to share their secrets with strangers.,1,1,0,0,0,2,3,1.50
+People who believe the man doesn't need to pay on the first date are more likely to check out another person in a communal shower.,1,1,0,0,0,2,3,1.50
+People who believe the man doesn't need to pay on the first date are more likely to prefer a convertible to a normal car.,1,1,0,0,0,2,3,1.50
+People who date someone because of their money are more likely to use a Blackberry.,1,1,0,0,0,2,3,1.50
+People who do not do drugs for religious/moral reasons are more likely to have sex in a public place.,1,1,0,0,0,2,3,1.50
+People who don't drink are more likely to have tried drugs.,1,1,0,0,0,2,3,1.50
+People who don't drink are more likely to masturbate at least 8 times a week.,1,1,0,0,0,2,3,1.50
+People who don't drink are more likely to prefer local stores over chain stores.,1,1,0,0,0,2,3,1.50
+People who exaggerate about sexual experience are more likely to think they're above average weight.,1,1,0,0,0,2,3,1.50
+People who frequently recycle are more likely to prefer flying to driving.,1,1,0,0,0,2,3,1.50
+People who groom their pubic area are more likely to always practice safe sex.,1,1,0,0,0,2,3,1.50
+People who groom their pubic area are more likely to believe euthanasia is okay.,1,1,0,0,0,2,3,1.50
+People who groom their pubic area are more likely to wipe standing up.,1,1,0,0,0,2,3,1.50
+People who groom their pubic area are more likely to write a poem for their partner.,1,1,0,0,0,2,3,1.50
+People who have blacked out from drinking are more likely to be afraid to fly.,1,1,0,0,0,2,3,1.50
+People who have had sex on a pool table are more likely to prefer regular soda to diet.,1,1,0,0,0,2,3,1.50
+People who have never stared death in the face are more likely to have been cheated on.,1,1,0,0,0,2,3,1.50
+People who have sex daily are more likely to be attracted to dangerous situations.,1,1,0,0,0,2,3,1.50
+People who have traded sex for drugs are more likely to be a conservative.,1,1,0,0,0,2,3,1.50
+People who have traded sex for drugs are more likely to be competitive.,1,1,0,0,0,2,3,1.50
+People who have traded sex for drugs are more likely to believe the man should pay on the first date.,1,1,0,0,0,2,3,1.50
+People who have traded sex for drugs are more likely to frequently pray during a difficult situation.,1,1,0,0,0,2,3,1.50
+People who keep in contact with their best friend monthly are more likely to prefer Burger King to McDonalds.,1,1,0,0,0,2,3,1.50
+People who masturbate less then once a week are more likely to prefer Burger King to McDonalds.,1,1,0,0,0,2,3,1.50
+People who never pray during a difficult situation are more likely to call out the wrong name during sex.,1,1,0,0,0,2,3,1.50
+People who never wash their hands after going to the bathroom are more likely to be a conservative.,1,1,0,0,0,2,3,1.50
+People who never wash their hands after going to the bathroom are more likely to be arrested for indecent exposure.,1,1,0,0,0,2,3,1.50
+People who prefer Lancome makeup over L'Oreal are more likely to have broken a bone.,1,1,0,0,0,2,3,1.50
+People who think they have below-average looks are more likely to find people with accents more sexy.,1,1,0,0,0,2,3,1.50
+People who think they have below-average looks are more likely to have a PC.,1,1,0,0,0,2,3,1.50
+People who wipe standing up are more likely to be attracted to dangerous situations.,1,1,0,0,0,2,3,1.50
+People who would consider having breast enlargement surgery are more likely to believe the man should pay on the first date.,1,1,0,0,0,2,3,1.50
+People who would marry someone after only a few months are more likely to fantasize about a celebrity during sex.,1,1,0,0,0,2,3,1.50
+People who've never tried alcohol are more likely to prefer shopping online.,1,1,0,0,0,2,3,1.50
+Singles are more likely to recycle most of the time.,1,1,0,0,0,2,3,1.50
+People who spend over $60 on beer during a normal month are more likely to believe in soul mates.,1,2,0,0,0,3,4,1.33
+Blackberry users are more likely to believe the stereotype that women are bad drivers.,0,1,0,0,0,1,1,1.00
+Blackberry users are more likely to date someone because of money.,0,2,0,0,0,2,2,1.00
+Conservatives are more likely to prefer Dr. Pepper to root beer.,0,2,0,0,0,2,2,1.00
+People in a relationship are more likely to groom their pubic area.,0,2,0,0,0,2,2,1.00
+People who are friends with someone they feel sorry for are more likely to have farted during sex.,0,1,0,0,0,1,1,1.00
+People who are interested in politics are more likely to have kids.,0,1,0,0,0,1,1,1.00
+People who believe birth control is wrong are more likely to attempt to take something through TSA security just to see if they could.,0,1,0,0,0,1,1,1.00
+People who believe same sex relationships are wrong are more likely to fall asleep during sex.,0,1,0,0,0,1,1,1.00
+People who believe same sex relationships are wrong are more likely to have a PC.,0,2,0,0,0,2,2,1.00
+People who believe same sex relationships are wrong are more likely to have sex on a pool table.,0,2,0,0,0,2,2,1.00
+People who believe same sex relationships are wrong are more likely to prefer regular beer to light beer.,0,2,0,0,0,2,2,1.00
+People who can cross their eyes are more likely to believe same sex relationships are acceptable.,0,1,0,0,0,1,1,1.00
+People who date someone because of their money are more likely to believe the stereotype that women are bad drivers.,0,1,0,0,0,1,1,1.00
+People who do not do drugs because of a bad experience are more likely to believe they are better looking then their partner.,0,2,0,0,0,2,2,1.00
+People who do not do drugs for religious/moral reasons are more likely to have been cheated on.,0,2,0,0,0,2,2,1.00
+People who do not do drugs for religious/moral reasons are more likely to tell someone they're attractive when they're not.,0,1,0,0,0,1,1,1.00
+People who do their own laundry are more likely to write a poem for their partner.,0,2,0,0,0,2,2,1.00
+People who don't believe in soul mates are more likely to think they're above average weight.,0,1,0,0,0,1,1,1.00
+People who drink 1-5 alcoholic beverages in a week are more likely to have had sex with more then four people.,0,2,0,0,0,2,2,1.00
+People who drink 11-20 alcoholic beverages in a week are more likely to call out the wrong name during sex.,0,1,0,0,0,1,1,1.00
+People who drink 6-10 alcoholic beverages in a week are more likely to enjoy sex in public places.,0,2,0,0,0,2,2,1.00
+People who frequently recycle are more likely to marry someone after only a few months.,0,2,0,0,0,2,2,1.00
+People who groom their pubic area are more likely to be able to touch their nose with their tongue.,0,2,0,0,0,2,2,1.00
+People who groom their pubic area are more likely to believe all marriages should be equal.,0,2,0,0,0,2,2,1.00
+People who groom their pubic area are more likely to have fallen asleep on the bathroom floor.,0,2,0,0,0,2,2,1.00
+People who groom their pubic area are more likely to have lied about love so they could have sex.,0,1,0,0,0,1,1,1.00
+People who groom their pubic area are more likely to lie about taking an STD test.,0,2,0,0,0,2,2,1.00
+People who have been fired from a job are more likely to believe in soul mates.,0,2,0,0,0,2,2,1.00
+People who have been fired from a job are more likely to believe the stereotype that women are bad drivers.,0,1,0,0,0,1,1,1.00
+People who have been fired from a job are more likely to disturb others by making too much noise during sex.,0,2,0,0,0,2,2,1.00
+People who have been to the hospital because of drug use are more likely to own a gun.,0,2,0,0,0,2,2,1.00
+People who have been to the hospital because of drug use are more likely to prefer a convertible to a normal car.,0,2,0,0,0,2,2,1.00
+People who have cheated on a significant other are more likely to believe same sex relationships are acceptable.,0,2,0,0,0,2,2,1.00
+People who have fallen asleep during sex are more likely to prefer regular beer to light beer.,0,2,0,0,0,2,2,1.00
+People who have fallen asleep on the bathroom floor are more likely to be interested in politics.,0,1,0,0,0,1,1,1.00
+People who have fallen asleep on the bathroom floor are more likely to check out another person in a communal shower.,0,1,0,0,0,1,1,1.00
+People who have fallen asleep on the bathroom floor are more likely to have been cheated on.,0,1,0,0,0,1,1,1.00
+People who have fallen asleep on the bathroom floor are more likely to leave a restaurant without paying.,0,2,0,0,0,2,2,1.00
+People who have gone to work drunk are more likely to go on a blind date.,0,2,0,0,0,2,2,1.00
+People who have had a threesome are more likely to wipe sitting down.,0,2,0,0,0,2,2,1.00
+People who have lied about loving someone so they could have sex are more likely to have stolen something.,0,2,0,0,0,2,2,1.00
+People who have never stared death in the face are more likely to believe the stereotype that women are bad drivers.,0,2,0,0,0,2,2,1.00
+People who have popped pills are more likely to always practice safe sex.,0,2,0,0,0,2,2,1.00
+People who have sex daily are more likely to lie about taking an STD test.,0,1,0,0,0,1,1,1.00
+People who have shot a gun are more likely to prefer a normal car to a convertible.,0,2,0,0,0,2,2,1.00
+People who have slept with someone to get back at someone else are more likely to have blonde hair.,0,2,0,0,0,2,2,1.00
+People who have slept with someone to get back at someone else are more likely to have sex on a pool table.,0,2,0,0,0,2,2,1.00
+People who have taken an STD test in the last 12 months are more likely to have a friend with benefits.,0,2,0,0,0,2,2,1.00
+People who have traded sex for drugs are more likely to prefer driving to flying.,0,2,0,0,0,2,2,1.00
+People who have two siblings are more likely to share their secrets with their partner.,0,1,0,0,0,1,1,1.00
+People who masturbate less then once a week are more likely to want to sleep with one of their friends.,0,1,0,0,0,1,1,1.00
+People who never wash their hands after going to the bathroom are more likely to feel judged by their family.,0,2,0,0,0,2,2,1.00
+People who prefer cuddling to a night of sex are more likely to have no kids.,0,2,0,0,0,2,2,1.00
+People who prefer diet soda to regular are more likely to have kids.,0,2,0,0,0,2,2,1.00
+People who prefer Lancome makeup over L'Oreal are more likely to use an iPhone.,0,2,0,0,0,2,2,1.00
+People who spend over $60 on beer during a normal month are more likely to believe in ghosts.,0,1,0,0,0,1,1,1.00
+People who spend over $60 on beer during a normal month are more likely to believe the man should pay on the first date.,0,3,0,0,0,3,3,1.00
+People who spend over $60 on beer during a normal month are more likely to own a gun.,0,2,0,0,0,2,2,1.00
+People who spend over $60 on beer during a normal month are more likely to prefer letting the other person make the first move.,0,2,0,0,0,2,2,1.00
+People who spend over $60 on beer during a normal month are more likely to prefer shopping online.,0,2,0,0,0,2,2,1.00
+People who spend over $60 on beer during a normal month are more likely to use an iPhone.,0,2,0,0,0,2,2,1.00
+People who spend over $60 on beer during a normal month are more likely to want to sleep with one of their friends.,0,2,0,0,0,2,2,1.00
+People who think abortion is wrong are more likely to prefer regular soda to diet.,0,2,0,0,0,2,2,1.00
+People who think hunting for fun is fine are more likely to have used marijuana.,0,2,0,0,0,2,2,1.00
+People who think they have below-average looks are more likely to buy organic food.,0,1,0,0,0,1,1,1.00
+People who think they have below-average looks are more likely to have never used drugs.,0,1,0,0,0,1,1,1.00
+People who think they have below-average looks are more likely to lie about taking an STD test.,0,2,0,0,0,2,2,1.00
+People who want to have sex in a public place are more likely to be women.,0,2,0,0,0,2,2,1.00
+People who want to have sex in a public place are more likely to have never stared death in the face.,0,2,0,0,0,2,2,1.00
+People who want to have sex in a public place are more likely to prefer Dr. Pepper to root beer.,0,2,0,0,0,2,2,1.00
+People who would consider having breast enlargement surgery are more likely to have slept with a former teacher.,0,2,0,0,0,2,2,1.00
+People who would marry someone after only a few months are more likely to be attracted to dangerous situations.,0,2,0,0,0,2,2,1.00
+People who would marry someone after only a few months are more likely to have abused Rx Drugs.,0,1,0,0,0,1,1,1.00
+People who would marry someone after only a few months are more likely to have stolen something.,0,2,0,0,0,2,2,1.00
+People who've had an STD are more likely to have kids.,0,2,0,0,0,2,2,1.00
+People who've had seven or more one-night stands are more likely to have kids.,0,2,0,0,0,2,2,1.00
+People who've never tried alcohol are more likely to have sex on a pool table.,0,2,0,0,0,2,2,1.00
+People whose favorite drink is wine are more likely to think they're above average height.,0,2,0,0,0,2,2,1.00
+Singles are more likely to have abused Rx Drugs.,0,2,0,0,0,2,2,1.00
+People who believe birth control is wrong are more likely to believe euthanasia is okay.,1,0,1,0,0,2,1,0.50
+People who have been fired from a job are more likely to be women.,1,0,1,0,0,2,1,0.50
+People who spend over $60 on beer during a normal month are more likely to have kids.,1,2,0,1,0,4,2,0.50
+People who have gone to work drunk are more likely to keep in touch with their best friend weekly.,1,1,0,1,0,3,1,0.33
+Left-footed people are more likely to wipe standing up.,1,0,0,1,0,2,0,0.00
+Married people are more likely to think they're above average weight.,1,0,0,1,0,2,0,0.00
+People in a relationship are more likely to have fallen asleep on the bathroom floor.,1,0,0,1,0,2,0,0.00
+People who believe same sex relationships are wrong are more likely to have no kids.,0,1,1,0,0,2,0,0.00
+People who do not do drugs because of a bad experience are more likely to have no kids.,1,0,0,1,0,2,0,0.00
+People who groom their pubic area are more likely to do a week-long juice cleanse.,0,1,1,0,0,2,0,0.00
+People who have been arrested for indecent exposure are more likely to think they're above average weight.,1,0,0,1,0,2,0,0.00
+People who have fallen asleep during sex are more likely to believe in life after death.,1,0,0,1,0,2,0,0.00
+People who have fallen asleep on the bathroom floor are more likely to believe euthanasia is okay.,1,0,0,1,0,2,0,0.00
+People who have never stared death in the face are more likely to do a week-long juice cleanse.,1,0,0,1,0,2,0,0.00
+People who have never tried drugs are more likely to masturbate at least 8 times a week.,0,1,1,0,0,2,0,0.00
+People who have sex daily are more likely to be ambidextrous.,0,1,1,0,0,2,0,0.00
+People who have sex daily are more likely to be women.,1,0,0,1,0,2,0,0.00
+People who have slept with someone to get back at someone else are more likely to be competitive.,0,2,0,1,0,3,0,0.00
+People who have taken an STD test in the last 12 months are more likely to be divorced.,1,0,0,1,0,2,0,0.00
+People who never wash their hands after going to the bathroom are more likely to frequently pray during a difficult situation.,1,0,0,1,0,2,0,0.00
+People who spend over $60 on beer during a normal month are more likely to buy organic food.,0,1,1,0,0,2,0,0.00
+People who spend over $60 on beer during a normal month are more likely to suck their thumb.,1,0,0,1,0,2,0,0.00
+People who think they have above-average looks are more likely to have slept with a former teacher.,0,1,1,0,0,2,0,0.00
+People who want to have sex in a public place are more likely to are an only child.,1,0,0,1,0,2,0,0.00
+People who want to have sex in a public place are more likely to suck their thumb.,0,1,1,0,0,2,0,0.00

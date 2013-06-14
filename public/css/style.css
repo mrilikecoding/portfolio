@@ -5,6 +5,10 @@ body {
     font-family: PT Sans, sans-serif;
 }
 
+#chart{
+    margin-left: 25px;
+}
+
 #header .button-field .btn {
     margin-top: -7px;
 }
@@ -16,12 +20,17 @@ body {
     display: inline;
 }
 
+#questions{
+    margin-left:25px;
+}
+
 g circle:hover{
     stroke: #000000;
     stroke-width: 2px;
 }
 
 .insightList{
+    margin-left: 1em;
     font-size: 1.6em;
     font-family: PT Sans, sans-serif;
 }
