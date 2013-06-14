@@ -10,6 +10,7 @@ body {
 }
 #legend {
     font-family: PT Serif, serif;
+    font-size: 1.6em;
 }
 #legend li {
     display: inline;

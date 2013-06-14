@@ -22,12 +22,16 @@ var $makePages = function(){
         if (i < 10) {
             $(this).addClass("page1");
         } else if (i < 20 && i >= 10 ){
+           // $("ol").attr("start", "10");
             $(this).addClass("page2").hide();
         } else if (i < 30 && i >= 20 ){
+           // $("ol").attr("start", "20");
             $(this).addClass("page3").hide();
         } else if (i < 40 && i >= 30 ){
+           // $("ol").attr("start", "30");
             $(this).addClass("page4").hide();
         } else if (i < 50 && i >= 40 ){
+          //  $("ol").attr("start", "40");
             $(this).addClass("page5").hide();
         } else {
             $(this).addClass("overflow").remove();
@@ -41,6 +45,8 @@ var $goToPage = function(pageNumber){
         $(".p" + i).removeClass("disabled");
     }
     $(".page" + pageNumber).show();
+    $("ol").attr("start", "" + (pageNumber*10) - 9 + "");
+
     //for Bootstrap pagination links (corresponding to page numbers)
     $(".p" + pageNumber).addClass("disabled");
 }
@@ -123,17 +129,19 @@ var bubble = function(){
                 .filter(function(d) { return !d.children; }));
         var node = selection.enter().append("g")
             .attr("class", "node")
-            .attr("transform", function(d) { return "translate(" + d.x + ", " + d.y + ")"; })
+            .attr("transform", function(d) { return "translate(" + 0 + ", " + 0 + ")"; })
             .filter(function(d){
                 return d.value > 0;
             });
-        node.append("circle")
+        node.append("circle").attr("r", "0")
             .transition()
             .delay(function(d, i) { return i * 100 })
+            .duration(4000)
             .ease("elastic")
-            .duration(700)
+            .attr("transform", function(d) { return "translate(" + d.x + ", " + d.y + ")"; })
             .attr("r", function(d) { return d.r; })
-            .style("fill", function(d) { return color(scale(d.value)); });
+
+        node.style("fill", function(d) { return color(scale(d.value)); });
         node.append("text")
             .transition()
             .delay(function(d, i) { return i * 120 })
