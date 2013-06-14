@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac0e0491-73da-457a-81ca-300b4dcf52e8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.haml" afterPath="$PROJECT_DIR$/views/index.haml" />
     </list>
     <ignored path="sc-insights.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="3" selection-start="147" selection-end="147" vertical-scroll-proportion="0.22970903">
+            <state line="10" column="3" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="8" selection-start="761" selection-end="761" vertical-scroll-proportion="-16.875">
+            <state line="19" column="14" selection-start="623" selection-end="623" vertical-scroll-proportion="0.30842608">
               <folding />
             </state>
           </provider>
@@ -99,9 +99,9 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/public/js/script.js" />
-        <option value="$PROJECT_DIR$/views/index.haml" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/app.rb" />
+        <option value="$PROJECT_DIR$/views/index.haml" />
       </list>
     </option>
   </component>
@@ -476,20 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="8" selection-start="761" selection-end="761" vertical-scroll-proportion="-16.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="18" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
@@ -499,7 +485,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="3" selection-start="147" selection-end="147" vertical-scroll-proportion="0.22970903">
+        <state line="10" column="3" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="21" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="14" selection-start="623" selection-end="623" vertical-scroll-proportion="0.30842608">
           <folding />
         </state>
       </provider>
