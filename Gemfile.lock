@@ -1,9 +1,17 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    bson (1.9.0)
+    bson_ext (1.9.0)
+      bson (~> 1.9.0)
     haml (4.0.3)
       tilt
+    mongo (1.9.0)
+      bson (~> 1.9.0)
+    mongodb (2.1.0)
+      mongo (~> 1.5)
     rack (1.5.2)
+    rake (10.0.4)
     sinatra (1.1.0)
       rack (~> 1.1)
       tilt (~> 1.1)
@@ -13,5 +21,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bson_ext
   haml
+  mongo
+  mongodb
+  rake
   sinatra (= 1.1.0)
