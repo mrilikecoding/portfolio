@@ -10,10 +10,10 @@ include Mongo
 configure do
   set :views, "#{File.dirname(__FILE__)}/views"
 
-  #Mongo
-  conn = MongoClient.new("localhost", 27017)
-  set :mongo_connection, conn
-  set :mongo_db, conn.db('test')
+  ##Mongo
+  #conn = MongoClient.new("localhost", 27017)
+  #set :mongo_connection, conn
+  #set :mongo_db, conn.db('test')
 end
 
 #for local vars
