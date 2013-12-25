@@ -1,5 +1,7 @@
 source "https://rubygems.org"
-gem 'sinatra', '1.1.0'
+
+gem 'sinatra', '1.4.3'
+gem 'sinatra-contrib'
 gem 'haml'
 gem 'mongo'
 gem 'mongodb'

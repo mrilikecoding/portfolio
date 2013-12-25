@@ -1,53 +1,162 @@
-!!!
-%html
-  %head
-    %meta{ :charset => "utf-8"}
-    %script{ :type=> "text/javascript", :src=> "js/d3.v3.js"}
-    %script{ :type=> "text/javascript", :src=> "http://code.jquery.com/jquery-latest.min.js"}
-    %link{ :href=> "css/bootstrap.min.css", :rel => "stylesheet", :media => "screen"}
-    %link{ :href=> "css/style.css", :rel => "stylesheet", :media => "screen"}
-    %title SocialCrunch Insight Results
-  %body
-    #main
-      #header
-        %a{ :href => "#"}
-          %img{ :src => "logo.png"}
-        %hr
-      .button-field.alert.alert-info
-        %span.lead View top insights:
-        %span.list.btn
-          %i.icon-list
-          List
-        %span.bubble.btn
-          %i.icon-certificate
-          Bubble
-      %h4
-      #content
-        #anchor
-          %h2#caption
-          %h3#questions Hover to see insight...
-          #chart
-          %ul#legend
-            %li{ :style => "color: #1f77b4;"}
-              Super Interesting /
-            %li{ :style => "color: #ff7f0e;"}
-              \/ Very Interesting /
-            %li{ :style => "color: #2ca02c;"}
-              \/ Interesting /
-            %li{ :style => "color: #d62728;"}
-              \/ Somewhat Interesting /
-            %li{ :style => "color: #9467bd;"}
-              \/ Not Interesting
-          .pagination
-            %ul
-              %li.p1.disabled
-                %a{:href=> "#anchor", :onClick=> "$goToPage(1);"} 1
-              %li.p2
-                %a{:href=> "#anchor", :onClick=> "$goToPage(2);"} 2
-              %li.p3
-                %a{:href=> "#anchor", :onClick=> "$goToPage(3);"} 3
-              %li.p4
-                %a{:href=> "#anchor", :onClick=> "$goToPage(4);"} 4
-              %li.p5
-                %a{:href=> "#anchor", :onClick=> "$goToPage(5);"} 5
-  %script{:src=>"js/script.js", :type=>"text/javascript"}
+= content_for :body do
+  %section#header.dark
+    %header
+      %h1 #{site_name}
+      %p #{site_description}
+    %footer
+      %a.button.scrolly{href: "#first"} #{header_button_text}
+  / First
+  %section#first.main
+    %header
+      .container
+        %h2 Tessellate is a free responsive site template
+        %p
+          Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat
+          %br/
+          feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.
+    .content.dark.style1.featured
+      .container
+        .row
+          .4u
+            %section
+              %span.feature-icon
+                %span.fa.fa-clock-o
+              %header
+                %h3 Gravida
+              %p
+                Gravida dis placerat lectus ante vel nunc euismod est turpis sodales.
+                Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus
+                ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
+                accumsan vivamus.
+          .4u
+            %section
+              %span.feature-icon
+                %span.fa.fa-bolt
+              %header
+                %h3 Vivamus
+              %p
+                Gravida dis placerat lectus ante vel nunc euismod est turpis sodales.
+                Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus
+                ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
+                accumsan vivamus.
+          .4u
+            %section
+              %span.feature-icon
+                %span.fa.fa-cloud
+              %header
+                %h3 Accumsan
+              %p
+                Gravida dis placerat lectus ante vel nunc euismod est turpis sodales.
+                Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus
+                ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
+                accumsan vivamus.
+        .row
+          .12u
+            %footer
+              %a.button.scrolly{href: "#second"} Gravida tempor lacinia
+  / Second
+  %section#second.main
+    %header
+      .container
+        %h2 Euismod sed feugiat lorem tempus magna
+        %p
+          Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat
+          %br/
+          feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.
+    .content.dark.style2
+      .container
+        .row
+          .4u
+            %section
+              %h3 Augue vivamus sed ipsum commodo lorem dolor
+              %p
+                Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
+                tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
+                vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
+                augue cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
+                lorem ipsum dolor placerat magna tempus feugiat.
+              %p
+                Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
+                accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
+                euismod lorem ipsum dolor.
+              %footer
+                %a.button.scrolly{href: "#third"} Accumsan nisi tempor
+          .8u
+            .row.no-collapse
+              .6u
+                %a.image.full{href: "http://ineedchemicalx.deviantart.com/art/You-and-I-collide-401457901"}
+                  %img{alt: "", src: "images/pic01.jpg"}/
+              .6u
+                %a.image.full{href: "http://ineedchemicalx.deviantart.com/art/Emperor-of-the-Stars-370265193"}
+                  %img{alt: "", src: "images/pic02.jpg"}/
+            .row.no-collapse
+              .6u
+                %a.image.full{href: "http://ineedchemicalx.deviantart.com/art/Sherlockin-369847236"}
+                  %img{alt: "", src: "images/pic03.jpg"}/
+              .6u
+                %a.image.full{href: "http://ineedchemicalx.deviantart.com/art/A-breath-of-Hope-366359145"}
+                  %img{alt: "", src: "images/pic04.jpg"}/
+            .row.no-collapse
+              .6u
+                %a.image.full{href: "http://ineedchemicalx.deviantart.com/art/The-Pursuit-355003425"}
+                  %img{alt: "", src: "images/pic05.jpg"}/
+              .6u
+                %a.image.full{href: "http://ineedchemicalx.deviantart.com/art/Cherish-320041163"}
+                  %img{alt: "", src: "images/pic06.jpg"}/
+  / Third
+  %section#third.main
+    %header
+      .container
+        %h2 Ornare varius lorem ipsum ante lectus
+        %p
+          Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat
+          %br/
+          feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.
+    .content.dark.style3
+      .container
+        %span.image.featured
+          %img{alt: "", src: "images/pic07.jpg"}/
+        .row
+          .4u
+            %h3 Diam vivamus turpis lorem sodales lectus ornare
+            %p
+              Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
+              tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
+              vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
+              augue cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
+              lorem ipsum dolor placerat magna tempus feugiat.
+            %p
+              Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
+              accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
+              euismod lorem ipsum dolor sit amet consequat. vivamus nisi eu eget ornare varius
+              gravida dolore euismod lorem ipsum dolor sit amet consequat. vivamus nisi eu
+              eget ornare et magna.
+          .4u
+            %p
+              Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
+              tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
+              vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
+              augue cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
+              lorem ipsum dolor placerat magna tempus feugiat.
+            %p
+              Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
+              accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
+              euismod lorem ipsum dolor sit amet consequat eget ornare varius gravida euismod.
+              Gravida dis lorem ipsum dolor placerat magna tempus feugiat magna tempus lorem.
+            %p
+              Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
+              accumsan vivamus augue cubilia.
+          .4u
+            %p
+              Placerat lectus ante vel nunc euismod est turpis sodales. Diam tempor dui
+              lacinia eget ornare varius gravida. Gravida dis placerat lectus ante vel nunc
+              euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus augue
+              cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
+              lorem ipsum dolor placerat magna tempus feugiat. Lectus ante vel nunc euismod
+              est turpis sodales. Diam tempor dui lacinia dolore.
+            %p
+              Accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida
+              dolore euismod lorem ipsum dolor sit amet conseismod lorem ipsum dolor sit amet
+              consequat lorem ipsum consequat feugiat sed tempus euismod feugiat veroeros.
+            %footer
+              %a.button.scrolly{href: "#fourth"} Ipsum ornare lorem dolor

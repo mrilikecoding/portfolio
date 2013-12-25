@@ -1,62 +1,103 @@
 require 'rubygems'
 require 'sinatra'
+require 'sinatra/content_for'
 require 'haml'
 require 'mongo'
 require 'json/ext' # required for .to_json
 
+include Mongo
+
 configure do
   set :views, "#{File.dirname(__FILE__)}/views"
+
+  #Mongo
+  conn = MongoClient.new("localhost", 27017)
+  set :mongo_connection, conn
+  set :mongo_db, conn.db('test')
 end
 
+#for local vars
+app_config = {
+    site_name: "Site Name",
+    site_description: "This is where the site description goes",
+    header_button_text: "Explore"
+}
 
-include Mongo
-DB = Mongo::Connection.new.db("socialcrunch_development", :pool_size => 5, :timeout => 5)
-
+#routes
 
 get '/' do
-  haml :index
+  haml :index, :layout => :application, :locals => app_config
 end
 
-get '/questions' do
-  haml :questions
+
+##API##
+
+# show all collections
+get '/collections/?' do
+  settings.mongo_db.collection_names
 end
 
-get '/api/:thing' do
-  # query a collection :thing, convert the output to an array, map the id
-  # to a string representation of the object's _id and finally output to JSON
-  DB.collection(params[:thing]).find.toa.map{|t| frombsonid(t)}.to_json
+# list all documents in the test collection
+get '/documents/?' do
+  content_type :json
+  settings.mongo_db['test'].find.to_a.to_json
 end
 
-get '/api/:thing/:id' do
-  # get the first document with the id :id in the collection :thing as a single document (rather
-  # than a Cursor, the standard output) using findone(). Our bson utilities assist with
-  # ID conversion and the final output returned is also JSON
-  frombsonid(DB.collection(params[:thing]).findone(tobsonid(params[:id]))).to_json
+# find a document by its ID
+get '/document/:id/?' do
+  content_type :json
+  document_by_id(params[:id]).to_json
 end
 
-post '/api/:thing' do
-  # parse the post body of the content being posted, convert to a string, insert into
-  # the collection #thing and return the ObjectId as a string for reference
-  oid = DB.collection(params[:thing]).insert(JSON.parse(request.body.read.tos))
-  "{\"id\": \"#{oid.to_s}\"}"
+# insert a new document from the request parameters,
+# then return the full document
+post '/new_document/?' do
+  content_type :json
+  new_id = settings.mongo_db['test'].insert params
+  document_by_id(new_id).to_json
 end
 
-delete '/api/:thing/:id' do
-  # remove the item with id :id from the collection :thing, based on the bson
-  # representation of the object id
-  DB.collection(params[:thing]).remove('id' => tobson_id(params[:id]))
+# update the document specified by :id, setting its
+# contents to params, then return the full document
+put '/update/:id/?' do
+  content_type :json
+  id = object_id(params[:id])
+  settings.mongo_db['test'].update(:_id => id, params)
+  document_by_id(id).to_json
 end
 
-put '/api/:thing/:id' do
-  # collection.update() when used with $set (as covered earlier) allows us to set single values
-  # in this case, the put request body is converted to a string, rejecting keys with the name 'id' for security purposes
-  DB.collection(params[:thing]).update({'id' => tobsonid(params[:id])}, {'$set' => JSON.parse(request.body.read.tos).reject{|k,v| k == 'id'}})
-end
-                   # utilities for generating/converting MongoDB ObjectIds
-def
-  tobsonid(id) BSON::ObjectId.fromstring(id)
+# update the document specified by :id, setting just its
+# name attribute to params[:name], then return the full
+# document
+put '/update_name/:id/?' do
+  content_type :json
+  id   = object_id(params[:id])
+  name = params[:name]
+  settings.mongo_db['test'].
+      update(:_id => id, {"$set" => {:name => name}})
+  document_by_id(id).to_json
 end
 
-def
-  frombsonid(obj) obj.merge({'id' => obj['id'].tos})
+# delete the specified document and return success
+delete '/remove/:id' do
+  content_type :json
+  settings.mongo_db['test'].
+      remove(:_id => object_id(params[:id]))
+  {:success => true}.to_json
 end
+
+helpers do
+
+  # a helper method to turn a string ID
+  # representation into a BSON::ObjectId
+  def object_id val
+    BSON::ObjectId.from_string(val)
+  end
+
+  def document_by_id id
+    id = object_id(id) if String === id
+    settings.mongo_db['test'].
+        find_one(:_id => id).to_json
+  end
+end
+

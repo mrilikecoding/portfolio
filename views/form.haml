@@ -1,0 +1,23 @@
+%section
+  %header
+    %h3 Form
+  %form{action: "#", method: "post"}
+    .row.half
+      .6u
+        %input#name.text{name: "name", placeholder: "John Doe", type: "text", value: ""}/
+      .6u
+        %input#email.text{name: "email", placeholder: "johndoe@domain.tld", type: "text", value: ""}/
+    .row.half
+      .12u
+        .select
+          %select#department{name: "department"}
+            %option{value: ""} Choose a department
+            %option{value: "1"} Manufacturing
+            %option{value: "2"} Administration
+            %option{value: "3"} Support
+    .row.half
+      .12u
+        %input#subject.text{name: "subject", placeholder: "Enter your subject", type: "text", value: ""}/
+    .row.half
+      .12u
+        %textarea#message{name: "message", placeholder: "Enter your message"}
