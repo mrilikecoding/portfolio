@@ -7,3 +7,6 @@ gem 'mongo'
 gem 'mongodb'
 gem 'bson_ext'
 gem 'rake'
+
+#dev
+gem 'shotgun'

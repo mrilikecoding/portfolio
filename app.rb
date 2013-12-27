@@ -18,15 +18,21 @@ end
 
 #for local vars
 app_config = {
-    site_name: "Site Name",
-    site_description: "This is where the site description goes",
-    header_button_text: "Explore"
+    site_name: "Nathan Green",
+    site_description: "Developer, Director, Musician",
+    header_button_text: "Learn more",
+    #first panel
 }
 
 #routes
 
 get '/' do
-  haml :index, :layout => :application, :locals => app_config
+  haml :index, :layout => :application, :locals =>
+      app_config
+end
+
+get '/elements' do
+  haml :elements, :layout => :application
 end
 
 #
