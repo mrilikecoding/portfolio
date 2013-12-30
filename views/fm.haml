@@ -1,24 +1,24 @@
 .row.fm
   .12u
     %h3 FM Curves
-    %h4 A fun interactive way to visualize Frequency Modulation
+    %h4 A fun, interactive way to visualize Frequency Modulation
     .row
-      .12
+      .12u
+        / This version of the embed code is no longer supported. Learn more: https://vimeo.com/s/tnm
+        %object{height: "377", width: "500"}
+          %param{name: "allowfullscreen", value: "true"}/
+          %param{name: "allowscriptaccess", value: "always"}/
+          %param{name: "movie", value: "http://vimeo.com/moogaloop.swf?clip_id=78747926&force_embed=1&server=vimeo.com&show_title=1&show_byline=1&show_portrait=1&color=00adef&fullscreen=1&autoplay=0&loop=0"}/
+          %embed{allowfullscreen: "true", allowscriptaccess: "always", height: "377", src: "http://vimeo.com/moogaloop.swf?clip_id=78747926&force_embed=1&server=vimeo.com&show_title=1&show_byline=1&show_portrait=1&color=00adef&fullscreen=1&autoplay=0&loop=0", type: "application/x-shockwave-flash", width: "500"}
+        %p
+          %a{href: "http://vimeo.com/78747926"} Frequency Modulation Curves
+          from
+          %a{href: "http://vimeo.com/nathangreen"} Nathan Green
+          on
+          = succeed "." do
+            %a{href: "https://vimeo.com"} Vimeo
+    .row
+      .12u
         %p
           Using Processing, I’m manipulating a simple Frequency Modulation synthesizer sound patch to perform some interesting trigonometry functions on a series of Bezier curves.
           I’m basically manipulating the frequency of one sine wave  (the carrier wave) with another oscillating sine wave (the modulating wave). You can hear the manipulation when the modulating wave is below 20Hz or so on the frequency dial. When the modulating frequency gets higher than 20Hz, some cool sidebands start happening. The more curves, the more complex the shapes.
-
-    %p
-      / This version of the embed code is no longer supported. Learn more: https://vimeo.com/s/tnm
-      %object{height: "377", width: "500"}
-        %param{name: "allowfullscreen", value: "true"}/
-        %param{name: "allowscriptaccess", value: "always"}/
-        %param{name: "movie", value: "http://vimeo.com/moogaloop.swf?clip_id=78747926&force_embed=1&server=vimeo.com&show_title=1&show_byline=1&show_portrait=1&color=00adef&fullscreen=1&autoplay=0&loop=0"}/
-        %embed{allowfullscreen: "true", allowscriptaccess: "always", height: "377", src: "http://vimeo.com/moogaloop.swf?clip_id=78747926&force_embed=1&server=vimeo.com&show_title=1&show_byline=1&show_portrait=1&color=00adef&fullscreen=1&autoplay=0&loop=0", type: "application/x-shockwave-flash", width: "500"}
-      %p
-        %a{href: "http://vimeo.com/78747926"} Frequency Modulation Curves
-        from
-        %a{href: "http://vimeo.com/nathangreen"} Nathan Green
-        on
-        = succeed "." do
-          %a{href: "https://vimeo.com"} Vimeo

@@ -31,32 +31,6 @@
         %link{href: "css/style-wide.css", rel: "stylesheet"}/
       /[if lte IE 8] <link rel="stylesheet" href="css/ie/v8.css" />
       /[if lte IE 9] <link rel="stylesheet" href="css/ie/v9.css" />
-      %nav.navbar.navbar-inverse.navbar-fixed-bottom{role: "navigation"}
-        .container
-          .navbar-header
-            %button.navbar-toggle{"data-target" => ".navbar-ex1-collapse", "data-toggle" => "collapse", type: "button"}
-              %span.sr-only Toggle navigation
-              %span.icon-bar
-              %span.icon-bar
-              %span.icon-bar
-            %a.navbar-brand.scrolly{href: "#header"} Nathan R Green
-          .collapse.nav-collapse.navbar-ex1-collapse
-            %ul.nav.navbar-nav.navbar-right
-              %li
-                %a.scrolly{href: "#first", :onclick => "ga('send', 'event', 'v2', 'Clicked About - Nav');"} About
-              %li
-                %a.scrolly{href: "#second", :onclick => "ga('send', 'event', 'v2', 'Clicked Development - Nav');"} Development
-              %li
-                %a.scrolly{href: "#third", :onclick => "ga('send', 'event', 'v2', 'Clicked Experience Design - Nav');"} Experience Design
-              %li
-                %a.scrolly{href: "#fourth", :onclick => "ga('send', 'event', 'v2', 'Clicked Music - Nav');"} Music
-              %li
-                %a{href: "http://www.linkedin.com/in/nrgreen", :onclick => "ga('send', 'event', 'v2', 'Clicked LinkedIn - Nav');", :target => "_blank"}
-                  %i.fa.fa-linkedin-square
-              -#%li
-              -#  %a{href: "#contact"}
-              -#    %i.fa.fa-envelope
-              -#%li
       = yield_content :body
       .footer
       = yield_content :js_footer_includes

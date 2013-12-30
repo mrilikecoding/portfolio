@@ -1,12 +1,12 @@
 = content_for :body do
+  = haml(:navbar, :layout => false)
   %section#header.dark
     %header
       %h1 #{site_name}
       %p #{site_description}
     %footer
       %a.button.scrolly{href: "#first", :onclick => "ga('send', 'event', 'v2', 'Clicked #{header_button_text}');"} #{header_button_text}
-  / First
-  %section#first.main
+  %section#about.main
     %header
       .container
         %h2 Welcome to my portfolio
@@ -16,9 +16,11 @@
           By night, I direct immersive live experiences and hack
           away at interesting projects.
           %br/
-          I believe technology can engender local and global communities
-          within which we can experience our rich diversities, find common
-          ground, and collaborate for our mutual betterment.
+          I believe technology can help create communities
+          where we can find common ground and collaborate for our mutual betterment.
+          %br/
+          To view my resume or work experience,
+          %a{:href => "http://www.linkedin.com/in/nrgreen", :target => "_blank", :onclick => "ga('send', 'event', 'v2', 'Clicked LinkedIn from About Section');"} hop over to my LinkedIn.
     .content.dark.style1.featured
       .container
         .row
@@ -43,7 +45,7 @@
                 %header
                   %h3 Live Experiences
               %p
-                I work as a director, deviser, and experience-maker in Chicago, IL.
+                I work as a director, deviser, and experience-maker in Chicago.
                 I have a background in collaboratively created physical theater.
                 I believe immersive experiences can be powerful and transformative.
                 In a world of 2D media, live experiences are uniquely situated to subvert
@@ -56,8 +58,7 @@
                 %header
                   %h3 Music
               %p
-                I play guitar in a Funk/Soul/Rock band called Funky Hot Grits.
-                I've played in jazz combos, rock bands, and a word-beat band.
+                I've played in jazz combos, rock bands, and word-beat bands.
                 I've played percussion in Brazilian Samba and Indonesian Gamelan ensembles.
                 I've sang in choirs, and studied West African percussion, as well as classical, and jazz guitar.
                 In college, I concentrated in electronic music composition.
@@ -65,8 +66,7 @@
           .12u
             %footer
               %a.button.scrolly{href: "#second"} Some examples of my work...
-  / Second
-  %section#second.main
+  %section#development.main
     %header
       .container
         %h2 Application Development
@@ -95,17 +95,19 @@
         %a.right.carousel-control{"data-slide" => "next", href: "#devcarousel"}
           %span.fa.fa-angle-right
         %footer
-          %a.button.scrolly{href: "#third"} Next: See Live Experience Work
-
-  / Third
-  %section#third.main
+          %a.button.scrolly{href: "#third"} Next: Live Experience
+  %section#experience.main
     %header
       .container
         %h2 Live Experience Design
         %h3 After Dark | Late Edition | Our Last Night on Earth
         %p
-          There's nothing more powerful than direct experience. I love creating unique original experiences and building them collaboratively.
-          I'm a company member of Chicago's Collaboraction, where I do a lot of interesting work. I also used to run an ensemble-based physical theatre company called Fish & Bicycle.
+          There's nothing more powerful than direct experience. I love collaboratively creating unique, original experiences.
+          I'm interested in how technology can inform or enhance storytelling and create new connections between creators, performers, and audience members.
+          I'm a company member of Chicago's
+          %a{:href => "http://www.collaboraction.org", :target => "_blank", :onclick => "ga('send', 'event', 'v2', 'Clicked Collaboraction');"} Collaboraction,
+          where I do a lot of interesting work. I also used to run an ensemble-based physical theatre company called
+          %a{:href => "http://www.fishandbicylce.come", :target => "_blank", :onclick => "ga('send', 'event', 'v2', 'Clicked Fish and Bicycle');"} Fish & Bicylce.
     .content.dark.style2.exp
       .container
         #expcarousel.carousel.slide{"data-ride" => "carousel", "data-interval" => "false"}
@@ -126,18 +128,16 @@
           %span.fa.fa-angle-right
 
         %footer
-          %a.button.scrolly{href: "#fourth"} Next: Learn about my work as a musician
-
-  / Fourth
-  %section#fourth.main
+          %a.button.scrolly{href: "#fourth"} Next: Music
+  %section#music.main
     %header
       .container
         %h2 Music
         %h3 Tibetan Book of the Dead | Electronic Music Composition | Funky Hot Grits
         %p
-          As a musician, I'm interested in the intersections between performance, technology, and storytelling. How does music enable community and collaboration?
-          How is music both culturally specific and universal? I'm deeply interested in the music traditions of other cultures and how music manifests in ceremony and ritual.
-          How can modern modes of music making engender liminal spaces and transformative experiences?
+          As a musician, I'm interested in intersections between performance and technology. How can music enable community and collaboration?
+          How is music both culturally specific and universal? I'm deeply interested in the music traditions of other cultures and how music plays a part in ceremony and ritual.
+          How can modern modes of music-making engender liminal spaces and transformative experiences?
           %br/
     .content.dark.style2.music
       .container

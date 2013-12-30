@@ -24,65 +24,10 @@
 	};
 
 
-    window._skel_panels_config = {
-        panels: {
-            leftPanel: {
-                breakpoints: 'narrower,mobile',
-                position: 'left',
-                size: 250,
-                html: '<div data-action="moveCell" data-args="left-sidebar,content"></div>'
-            },
-            rightPanel: {
-                breakpoints: 'narrower,mobile',
-                position: 'right',
-                size: 250,
-                html: '<div data-action="moveCell" data-args="right-sidebar,content"></div>'
-            },
-            bottomPanel: {
-                position: 'bottom',
-                size: 420
-                /*
-                 Since this panel is a bit more complicated, we're omitting its 'html' option and
-                 defining it inline (ie. in index.html).
-                 */
-            }
-        },
-        overlays: {
-            titleBar: {
-                breakpoints: 'mobile',
-                position: 'top-center',
-                width: '100%',
-                height: 44,
-                html: '<div data-action="copyHTML" data-args="title"></div>'
-            },
-            contactBar: {
-                position: 'bottom-center',
-                width: 250,
-                height: 60,
-                html:	'<a href="http://twitter.com/n33co" class="icon-twitter"></a>' +
-                    '<a href="#" class="toggle icon-envelope" data-action="togglePanel" data-args="bottomPanel"></a>' +
-                    '<a href="http://twitter.com/n33co" class="icon-facebook"></a>'
-            },
-            leftPanelButton: {
-                breakpoints: 'narrower,mobile',
-                position: 'top-left',
-                width: 80,
-                height: 60,
-                html: '<div class="toggle icon-angle-right" data-action="togglePanel" data-args="leftPanel"></div>'
-            },
-            rightPanelButton: {
-                breakpoints: 'narrower,mobile',
-                position: 'top-right',
-                width: 80,
-                height: 60,
-                html: '<div class="toggle icon-angle-left" data-action="togglePanel" data-args="rightPanel"></div>'
-            }
-        }
-    };
-
 /*********************************************************************************/
 /* jQuery Plugins                                                                */
 /*********************************************************************************/
+
 
 	// lazyload images
         $(function() {
@@ -90,13 +35,14 @@
                 effect : 'fadeIn'
             });
         });
-
+    // refresh when dom size changes
         $(window).on('slid.bs.carousel', function () {
             $.waypoints('refresh');
             $('[data-spy="scroll"]').each(function () {
                 var $spy = $(this).scrollspy('refresh')
             })
         })
+
 
 
         $(function() {
@@ -108,7 +54,7 @@
                 ga('send', 'event', 'v2', 'Used Carousel In Development Section');
                 $('body,html').animate({
                    scrollTop: $('.dev').offset().top + Math.floor(Math.random()*5)+5
-               }, 200);
+               }, 250);
             }
 
             function scrollToExpEl(){
@@ -116,7 +62,7 @@
 
                 $('body,html').animate({
                    scrollTop: $('.exp').offset().top + Math.floor(Math.random()*5)+5
-               }, 200);
+               }, 250);
             }
 
             function scrollToMusicEl(){
@@ -124,41 +70,39 @@
 
                 $('body,html').animate({
                    scrollTop: $('.music').offset().top + Math.floor(Math.random()*5)+5
-               }, 200);
+               }, 250);
             }
 
             var $dev_arrows = $('span.fa.fa-angle-left', '.dev').add('span.fa.fa-angle-right', '.dev'),
                 $exp_arrows = $('span.fa.fa-angle-left', '.exp').add('span.fa.fa-angle-right', '.exp'),
                 $music_arrows = $('span.fa.fa-angle-left', '.music').add('span.fa.fa-angle-right', '.music');
 
-            var $dev = $("#second"),
-                $exp = $("#third"),
-                $mus = $("#fourth");
+            var $all_arrows = $dev_arrows.add($exp_arrows).add($music_arrows);
+
+            var $dev = $("#development"),
+                $exp = $("#experience"),
+                $mus = $("#music");
+
 
             $dev.waypoint(function(direction){
                 if(direction === "up"){
                     ga('send', 'event', 'v2', 'Scrolled up to About Section');
-                    $dev_arrows.hide();
-                    $music_arrows.hide();
-                    $exp_arrows.hide();
-                } else {
+                    $all_arrows.hide();
+                } else if(direction === "down") {
                    ga('send', 'event', 'v2', 'Scrolled down to Application Development');
-                   $exp_arrows.hide();
-                   $music_arrows.hide();
-                   $dev_arrows.fadeIn();
+                    $all_arrows.hide();
+                    $dev_arrows.fadeIn();
                 }
             });
 
             $exp.waypoint(function(direction){
                 if(direction === "up"){
                     ga('send', 'event', 'v2', 'Scrolled up to Application Development');
+                    $all_arrows.hide();
                     $dev_arrows.fadeIn();
-                    $music_arrows.hide();
-                    $exp_arrows.hide();
-                } else {
+                } else if(direction === "down"){
                     ga('send', 'event', 'v2', 'Scrolled down to Experience Design');
-                    $dev_arrows.hide();
-                    $music_arrows.hide();
+                    $all_arrows.hide();
                     $exp_arrows.fadeIn();
                 }
             });
@@ -166,13 +110,11 @@
             $mus.waypoint(function(direction){
                 if(direction === "up"){
                     ga('send', 'event', 'v2', 'Scrolled up to Experience Design');
+                    $all_arrows.hide();
                     $exp_arrows.fadeIn();
-                    $dev_arrows.hide();
-                    $music_arrows.hide();
-                } else {
+                } else if(direction === "down"){
                    ga('send', 'event', 'v2', 'Scrolled down to Music');
-                   $exp_arrows.hide();
-                   $dev_arrows.hide();
+                   $all_arrows.hide();
                    $music_arrows.fadeIn();
                 }
             });

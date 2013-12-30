@@ -1,0 +1,26 @@
+%nav#mainnav.navbar.navbar-inverse.navbar-fixed-bottom{role: "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-ex1-collapse", "data-toggle" => "collapse", type: "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand.scrolly{href: "#header"} Nathan R Green
+    .collapse.nav-collapse.navbar-ex1-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a.scrolly{href: "#about", :onclick => "ga('send', 'event', 'v2', 'Clicked About - Nav');"} About
+        %li
+          %a.scrolly{href: "#development", :onclick => "ga('send', 'event', 'v2', 'Clicked Development - Nav');"} Development
+        %li
+          %a.scrolly{href: "#experience", :onclick => "ga('send', 'event', 'v2', 'Clicked Experience Design - Nav');"} Experience Design
+        %li
+          %a.scrolly{href: "#music", :onclick => "ga('send', 'event', 'v2', 'Clicked Music - Nav');"} Music
+        %li
+          %a{href: "http://www.linkedin.com/in/nrgreen", :onclick => "ga('send', 'event', 'v2', 'Clicked LinkedIn - Nav');", :target => "_blank"}
+            %i.fa.fa-linkedin-square
+        -#%li
+        -#  %a{href: "#contact"}
+        -#    %i.fa.fa-envelope
+        -#%li
