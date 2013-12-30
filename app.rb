@@ -18,8 +18,8 @@ end
 
 #for local vars
 app_config = {
-    site_name: "Nathan Green",
-    site_description: "Developer, Director, Musician",
+    site_name: "Nathan R Green",
+    site_description: "Developer | Director | Musician",
     header_button_text: "Learn more",
     #first panel
 }

@@ -1,0 +1,28 @@
+.row.fm
+  .12u
+    %h3 Electronic Music Composition
+    %h4 Compositions | The Never On Tuesdays
+    .row
+      .12
+        %ul.default
+          %li French Press is an experiment in musique concrete, but is deconstructed on a “microscopic” level: all sounds are from a metallic french press coffee maker, but I’ve chopped them up to reflect the idea of finely ground coffee beans pressed through water, ingested, and finally the buzzing effect of the caffeine as you feel it coursing through your veins.
+          %li Sixfourteen is an experiment in serialism.
+          %li FUTURMusik has some instructions below, best done with a group.
+        %iframe{frameborder: "no", height: "325", scrolling: "no", src: "https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F2899792", width: "100%"}
+        .button{"data-target" => "#myModal", "data-toggle" => "modal"}
+          Launch FUTURMusik instructions
+        %br/
+        %ul.default
+          %li The Never On Tuesdays: experimentations with IDM and electro-pop
+        %iframe{frameborder: "no", height: "450", scrolling: "no", src: "https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F2899418", width: "100%"}
+
+#myModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog", tabindex: "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+        %h4#myModalLabel.modal-title FUTURMusik: to be performed with a group
+      .modal-body
+        = haml(:FUTURMusik, :layout => false)
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", type: "button"} Close

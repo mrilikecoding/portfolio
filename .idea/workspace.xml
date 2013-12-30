@@ -2,15 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac0e0491-73da-457a-81ca-300b4dcf52e8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/fm/fm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/fm/fm2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/FUTURMusik.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/afterdark.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/carousel-nav.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/composition.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/crime.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/fhg.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/fm.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/kanari.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/late_edition.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/olnoe.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/tibet.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/waypoints.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/header.jpg" afterPath="$PROJECT_DIR$/public/images/header.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/application.haml" afterPath="$PROJECT_DIR$/views/application.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/elements.haml" afterPath="$PROJECT_DIR$/views/elements.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.haml" afterPath="$PROJECT_DIR$/views/index.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/init.js" afterPath="$PROJECT_DIR$/public/js/init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sc-insights.iml" afterPath="$PROJECT_DIR$/.idea/sc-insights.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style-normal.css" afterPath="$PROJECT_DIR$/public/css/style-normal.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sc-insights.iws" />
@@ -34,19 +48,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.haml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/index.haml">
+      <file leaf-file-name="tibet.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/tibet.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="0" selection-start="6527" selection-end="6527" vertical-scroll-proportion="0.36036035" vertical-offset="1710" max-vertical-offset="3630">
+            <state line="6" column="55" selection-start="0" selection-end="2292" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="840">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/application.haml">
+      <file leaf-file-name="olnoe.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/olnoe.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="41" selection-start="536" selection-end="536" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="465">
+            <state line="11" column="0" selection-start="399" selection-end="657" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fm.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/fm.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="45" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.5365474" vertical-offset="0" max-vertical-offset="643">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="late_edition.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/late_edition.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="9" selection-start="50" selection-end="50" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composition.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/composition.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="1698" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="495">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fhg.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/fhg.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="16" selection-start="302" selection-end="302" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="555">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="216" column="14" selection-start="3351" selection-end="3357" vertical-scroll-proportion="-11.076923" vertical-offset="2952" max-vertical-offset="20145">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1533" column="7" selection-start="34686" selection-end="34693" vertical-scroll-proportion="-1.5769231" vertical-offset="22954" max-vertical-offset="23595">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FUTURMusik.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/FUTURMusik.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="3" selection-start="1270" selection-end="1270" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
@@ -55,7 +132,7 @@
       <file leaf-file-name="init.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1305">
+            <state line="110" column="20" selection-start="4274" selection-end="4274" vertical-scroll-proportion="0.0" vertical-offset="1455" max-vertical-offset="3555">
               <folding />
             </state>
           </provider>
@@ -89,7 +166,6 @@
         <option value="$PROJECT_DIR$/views/_head.haml" />
         <option value="$PROJECT_DIR$/public/data2.csv" />
         <option value="$PROJECT_DIR$/views/questions.haml" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/views/layouts/application.haml" />
         <option value="$PROJECT_DIR$/views/table.haml" />
         <option value="$PROJECT_DIR$/views/form.haml" />
@@ -98,11 +174,29 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/setup.sh" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/views/projects/kanari.haml" />
+        <option value="$PROJECT_DIR$/views/crime_scene.haml" />
+        <option value="$PROJECT_DIR$/views/kanari.haml" />
+        <option value="$PROJECT_DIR$/views/crime.haml" />
+        <option value="$PROJECT_DIR$/views/afterdark.haml" />
         <option value="$PROJECT_DIR$/app.rb" />
-        <option value="$PROJECT_DIR$/views/elements.haml" />
-        <option value="$PROJECT_DIR$/public/js/init.js" />
+        <option value="$PROJECT_DIR$/public/css/carousel-nav.css" />
+        <option value="$PROJECT_DIR$/public/js/jquery.appear.js" />
+        <option value="$PROJECT_DIR$/public/js/bootstrap.js" />
+        <option value="$PROJECT_DIR$/views/tibet.haml" />
         <option value="$PROJECT_DIR$/views/application.haml" />
+        <option value="$PROJECT_DIR$/public/css/style-normal.css" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/views/elements.haml" />
+        <option value="$PROJECT_DIR$/views/FUTURMusik.haml" />
+        <option value="$PROJECT_DIR$/public/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/views/composition.haml" />
+        <option value="$PROJECT_DIR$/views/late_edition.haml" />
         <option value="$PROJECT_DIR$/views/index.haml" />
+        <option value="$PROJECT_DIR$/views/olnoe.haml" />
+        <option value="$PROJECT_DIR$/views/fhg.haml" />
+        <option value="$PROJECT_DIR$/public/js/init.js" />
+        <option value="$PROJECT_DIR$/views/fm.haml" />
       </list>
     </option>
   </component>
@@ -166,20 +260,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sc-insights" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nathanrgreen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -217,11 +297,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/views" />
-      <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/public/css/images" />
-      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="$PROJECT_DIR$/public/css" />
+      <recent name="$PROJECT_DIR$/public/images/fm" />
+      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/views/projects" />
     </key>
   </component>
   <component name="RunManager">
@@ -342,22 +422,22 @@
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23219374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3328125" sideWeight="0.7669095" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3269494" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23219374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22421876" sideWeight="0.7669095" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32763532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -380,55 +460,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/index.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="2505">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/application.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="549" selection-end="748" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="20" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="2505">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/application.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="549" selection-end="748" vertical-scroll-proportion="0.0" vertical-offset="43" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/setup.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="20" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="300">
@@ -565,14 +596,11 @@
         <state line="22" column="16" selection-start="0" selection-end="741" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="420" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1163" column="36" selection-start="31323" selection-end="31323" vertical-scroll-proportion="0.21633889" vertical-offset="17302" max-vertical-offset="20100" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="296" selection-end="296" vertical-scroll-proportion="0.5341246" vertical-offset="0" max-vertical-offset="674" />
+        <state line="24" column="0" selection-start="296" selection-end="296" vertical-scroll-proportion="0.5341246" vertical-offset="0" max-vertical-offset="674">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
@@ -627,37 +655,151 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/elements.haml">
+    <entry file="file://$PROJECT_DIR$/views/kanari.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="25" selection-end="2939" vertical-scroll-proportion="0.954955" vertical-offset="384" max-vertical-offset="1110">
+        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/afterdark.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="868" selection-end="868" vertical-scroll-proportion="0.2027027" vertical-offset="0" max-vertical-offset="666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/crime.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="145" selection-end="145" vertical-scroll-proportion="0.13513513" vertical-offset="0" max-vertical-offset="666">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="41" selection-start="673" selection-end="673" vertical-scroll-proportion="0.70412517" vertical-offset="15" max-vertical-offset="1725">
+        <state line="20" column="25" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1725">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/init.js">
+    <entry file="file://$PROJECT_DIR$/public/css/carousel-nav.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1305">
+        <state line="2" column="11" selection-start="80" selection-end="80" vertical-scroll-proportion="0.042674255" vertical-offset="0" max-vertical-offset="703">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1586" column="23" selection-start="46712" selection-end="46721" vertical-scroll-proportion="-0.39313573" vertical-offset="24042" max-vertical-offset="30180">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style-narrow.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style-normal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="8" selection-start="839" selection-end="839" vertical-scroll-proportion="0.47826087" vertical-offset="120" max-vertical-offset="810">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/application.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="41" selection-start="536" selection-end="536" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="465">
+        <state line="41" column="50" selection-start="2124" selection-end="2124" vertical-scroll-proportion="-10.791667" vertical-offset="356" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/elements.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="12" selection-start="2460" selection-end="2460" vertical-scroll-proportion="-19.833334" vertical-offset="454" max-vertical-offset="1110">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/FUTURMusik.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="3" selection-start="1270" selection-end="1270" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/composition.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="1698" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1533" column="7" selection-start="34686" selection-end="34693" vertical-scroll-proportion="-1.5769231" vertical-offset="22954" max-vertical-offset="23595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="216" column="14" selection-start="3351" selection-end="3357" vertical-scroll-proportion="-11.076923" vertical-offset="2952" max-vertical-offset="20145">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/late_edition.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="9" selection-start="50" selection-end="50" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/tibet.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="55" selection-start="0" selection-end="2292" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="0" selection-start="6527" selection-end="6527" vertical-scroll-proportion="0.36036035" vertical-offset="1710" max-vertical-offset="3630">
+        <state line="121" column="27" selection-start="5342" selection-end="5342" vertical-scroll-proportion="-75.625" vertical-offset="0" max-vertical-offset="2490">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/olnoe.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="399" selection-end="657" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/fhg.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="16" selection-start="302" selection-end="302" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="20" selection-start="4274" selection-end="4274" vertical-scroll-proportion="0.0" vertical-offset="1455" max-vertical-offset="3555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/fm.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="45" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.5365474" vertical-offset="0" max-vertical-offset="643">
           <folding />
         </state>
       </provider>

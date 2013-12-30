@@ -1187,8 +1187,9 @@
 			text-align: center;
 			position: relative;
 			z-index: 1;
+            text-shadow: 1px 1px 9px #000;
 		}
-		
+
 		#header header
 		{
 		}
@@ -1198,6 +1199,7 @@
 				font-size: 2.25em;
 				line-height: 1.25em;
 				margin-bottom: 0;
+
 			}
 			
 			#header header p
@@ -1249,6 +1251,7 @@
 		.main > .content
 		{
 			padding: 6em 0 6em 0;
+            position: relative;
 		}
 
 			.main > .content > .container

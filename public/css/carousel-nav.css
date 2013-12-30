@@ -1,0 +1,13 @@
+span.fa.fa-angle-left, span.fa.fa-angle-right {
+    position: fixed;
+    top: 35%;
+    font-size: 5em;
+    display: none;
+}
+
+span.fa.fa-angle-left {
+   left: 15px;
+}
+span.fa.fa-angle-right {
+    right: 15px;
+}
