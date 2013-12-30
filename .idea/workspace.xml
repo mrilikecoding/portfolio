@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac0e0491-73da-457a-81ca-300b4dcf52e8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/bootstrap.css" afterPath="$PROJECT_DIR$/public/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/init.js" afterPath="$PROJECT_DIR$/public/js/init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sc-insights.iml" afterPath="$PROJECT_DIR$/.idea/sc-insights.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/tibet.haml" afterPath="$PROJECT_DIR$/views/tibet.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newrelic.yaml" afterPath="$PROJECT_DIR$/newrelic.yaml" />
     </list>
     <ignored path="sc-insights.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app.rb">
+      <file leaf-file-name="newrelic.yaml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/newrelic.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="218" selection-end="218" vertical-scroll-proportion="0.1525941" vertical-offset="15" max-vertical-offset="1725">
+            <state line="44" column="32" selection-start="1753" selection-end="1753" vertical-scroll-proportion="0.6185148" vertical-offset="52" max-vertical-offset="3495">
               <folding />
             </state>
           </provider>
@@ -180,6 +174,7 @@
         <option value="$PROJECT_DIR$/public/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app.rb" />
+        <option value="$PROJECT_DIR$/newrelic.yaml" />
       </list>
     </option>
   </component>
@@ -439,11 +434,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/setup.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="20" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="300" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="24" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="210">
@@ -727,6 +717,13 @@
     <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="0" selection-start="218" selection-end="218" vertical-scroll-proportion="0.1525941" vertical-offset="15" max-vertical-offset="1725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newrelic.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="32" selection-start="1753" selection-end="1753" vertical-scroll-proportion="0.6185148" vertical-offset="52" max-vertical-offset="3495">
           <folding />
         </state>
       </provider>
