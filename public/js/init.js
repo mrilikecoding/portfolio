@@ -47,8 +47,11 @@
 
         $(function() {
             $(document).on('click', '.dev .carousel-control', scrollToDevEl);
+            $(document).on('click', '.dev .more', scrollToDevEl);
             $(document).on('click', '.exp .carousel-control', scrollToExpEl);
+            $(document).on('click', '.exp .more', scrollToExpEl);
             $(document).on('click', '.music .carousel-control', scrollToMusicEl);
+            $(document).on('click', '.music .more', scrollToMusicEl);
 
             function scrollToDevEl(){
                 ga('send', 'event', 'v2', 'Used Carousel In Development Section');

@@ -5,7 +5,7 @@
       %h1 #{site_name}
       %p #{site_description}
     %footer
-      %a.button.scrolly{href: "#first", :onclick => "ga('send', 'event', 'v2', 'Clicked #{header_button_text}');"} #{header_button_text}
+      %a.button.scrolly{href: "#about", :onclick => "ga('send', 'event', 'v2', 'Clicked #{header_button_text}');"} #{header_button_text}
   %section#about.main
     %header
       .container
@@ -95,7 +95,14 @@
         %a.right.carousel-control{"data-slide" => "next", href: "#devcarousel"}
           %span.fa.fa-angle-right
         %footer
-          %a.button.scrolly{href: "#third"} Next: Live Experience
+          .row
+            .6u
+              %a.button.scrolly{href: "#experience", :onclick => "ga('send', 'event', 'v2', 'Clicked Next Live Experience');"} Next: Live Experience
+            .6u
+              %a.more.alt.button{"data-slide" => "next", href: "#devcarousel", :onclick => "ga('send', 'event', 'v2', 'Clicked More Development');"}
+                More development
+                &nbsp;
+                %span.fa.fa-angle-double-right
   %section#experience.main
     %header
       .container
@@ -128,7 +135,14 @@
           %span.fa.fa-angle-right
 
         %footer
-          %a.button.scrolly{href: "#fourth"} Next: Music
+          .row
+            .6u
+              %a.button.scrolly{href: "#music", :onclick => "ga('send', 'event', 'v2', 'Clicked Next Music');"} Next: Music
+            .6u
+              %a.more.alt.button{"data-slide" => "next", href: "#expcarousel", :onclick => "ga('send', 'event', 'v2', 'Clicked More Experience Design');"}
+                More Experience Design
+                &nbsp;
+                %span.fa.fa-angle-double-right
   %section#music.main
     %header
       .container
@@ -158,3 +172,11 @@
         %a.right.carousel-control{"data-slide" => "next", href: "#musiccarousel"}
           %span.fa.fa-angle-right
         %footer
+          .row
+            .6u
+              %a.button.scrolly{href: "#about", :onclick => "ga('send', 'event', 'v2', 'Clicked Back to Top');"} Back to top
+            .6u
+              %a.more.alt.button{"data-slide" => "next", href: "#musiccarousel", :onclick => "ga('send', 'event', 'v2', 'Clicked More Music');"}
+                More Music
+                &nbsp;
+                %span.fa.fa-angle-double-right
