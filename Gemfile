@@ -7,6 +7,7 @@ gem 'mongo'
 gem 'mongodb'
 gem 'bson_ext'
 gem 'rake'
+gem 'newrelic_rpm'
 
 #dev
 gem 'shotgun'

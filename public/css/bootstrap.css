@@ -1460,6 +1460,7 @@ textarea.input-lg {
     content: '\203a';
 }
 .carousel-indicators {
+    height: 2.5em;
     position: absolute;
     top: -2.6em;
     left: 50%;

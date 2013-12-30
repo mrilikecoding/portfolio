@@ -108,7 +108,7 @@
                 ga('send', 'event', 'v2', 'Used Carousel In Development Section');
                 $('body,html').animate({
                    scrollTop: $('.dev').offset().top + Math.floor(Math.random()*5)+5
-               }, 100);
+               }, 200);
             }
 
             function scrollToExpEl(){
@@ -116,7 +116,7 @@
 
                 $('body,html').animate({
                    scrollTop: $('.exp').offset().top + Math.floor(Math.random()*5)+5
-               }, 100);
+               }, 200);
             }
 
             function scrollToMusicEl(){
@@ -124,7 +124,7 @@
 
                 $('body,html').animate({
                    scrollTop: $('.music').offset().top + Math.floor(Math.random()*5)+5
-               }, 100);
+               }, 200);
             }
 
             var $dev_arrows = $('span.fa.fa-angle-left', '.dev').add('span.fa.fa-angle-right', '.dev'),
