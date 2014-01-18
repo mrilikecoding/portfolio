@@ -21,21 +21,6 @@ configure do
   #set :mongo_db, conn.db('nathanrgreen')
 end
 
-
-assets do
-
-  js :application, %w(
-    /js/*.js
-  )
-  css :application, %w(
-    /css/*.css
-  )
-
-  js_compression :jsmin
-  css_compression :sass
-
-end
-
 #for local vars
 app_config = {
     site_name: "Nathan R Green",
