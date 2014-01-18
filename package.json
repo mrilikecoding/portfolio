@@ -1,0 +1,12 @@
+{
+    "name": "nathan-green-porfolio",
+    "version": "0.1.0",
+    "devDependencies": {
+        "grunt": "*",
+        "grunt-contrib-compass": "*",
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-clean": "*",
+        "grunt-contrib-watch": "*",
+        "grunt-contrib-imagemin": "*"
+    }
+}

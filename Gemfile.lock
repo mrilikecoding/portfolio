@@ -5,8 +5,15 @@ GEM
     bson (1.9.0)
     bson_ext (1.9.0)
       bson (~> 1.9.0)
+    chunky_png (1.2.9)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    fssm (0.2.10)
     haml (4.0.3)
       tilt
+    jsmin (1.0.1)
     mongo (1.9.0)
       bson (~> 1.9.0)
     mongodb (2.1.0)
@@ -19,6 +26,7 @@ GEM
     rack-test (0.6.2)
       rack (>= 1.0)
     rake (10.0.4)
+    sass (3.2.13)
     shotgun (0.9)
       rack (>= 1.0)
     sinatra (1.4.3)
@@ -39,11 +47,14 @@ PLATFORMS
 
 DEPENDENCIES
   bson_ext
+  compass
   haml
+  jsmin
   mongo
   mongodb
   newrelic_rpm
   rake
+  sass
   shotgun
   sinatra (= 1.4.3)
   sinatra-contrib
